@@ -53,9 +53,7 @@
    </dl>
    <p>This specification is available in the following formats: 
     <a href="single-page.html">single page HTML</a>,
-    <a href="index.html">multipage HTML</a>,
-<!--PUB-N-->    <a href="author/">web developer edition</a>.
-<!--PUB-Y-->    <a href="http://www.w3.org/TR/html5-author/">web developer edition</a>.
+    <a href="index.html">multipage HTML</a>.
    </p> 
   <!--BOILERPLATE middle-w3c-copyright-->
 
