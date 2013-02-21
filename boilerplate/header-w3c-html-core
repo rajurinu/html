@@ -12,7 +12,7 @@
 <!--SET SHORTDAY=1011-->
 <!--SET LONGDAY=11 October-->
 <!--SET TRNAME=html51-->
-<!--SET DEVURL=http://dev.w3.org/html5/spec/Overview.html-->
+<!--SET DEVURL=http://www.w3.org/html/wg/drafts/html/master/-->
 <!--SET COMPONENT=HTML5 spec (editor: Ian Hickson)-->
 <html lang="en-US-x-Hixie">
  <head>
@@ -28,23 +28,11 @@
 <!--BOILERPLATE middle-w3c-version-->
 <!-- ZZZ: add the new version after it has shipped -->
     <dt>Previous Versions:</dt>
-    <dd><a href="http://www.w3.org/TR/2012/WD-html5-20121217/">http://www.w3.org/TR/2012/WD-html5-20121217/</a></dd>
-    <dd><a href="http://www.w3.org/TR/2012/WD-html5-20121025/">http://www.w3.org/TR/2012/WD-html5-20121025/</a></dd>
-    <dd><a href="http://www.w3.org/TR/2012/WD-html5-20120329/">http://www.w3.org/TR/2012/WD-html5-20120329/</a></dd>
-    <dd><a href="http://www.w3.org/TR/2011/WD-html5-20110525/">http://www.w3.org/TR/2011/WD-html5-20110525/</a></dd>
-    <dd><a href="http://www.w3.org/TR/2011/WD-html5-20110405/">http://www.w3.org/TR/2011/WD-html5-20110405/</a></dd>
-    <dd><a href="http://www.w3.org/TR/2011/WD-html5-20110113/">http://www.w3.org/TR/2011/WD-html5-20110113/</a></dd>
-    <dd><a href="http://www.w3.org/TR/2010/WD-html5-20101019/">http://www.w3.org/TR/2010/WD-html5-20101019/</a></dd>
-    <dd><a href="http://www.w3.org/TR/2010/WD-html5-20100624/">http://www.w3.org/TR/2010/WD-html5-20100624/</a></dd>
-    <dd><a href="http://www.w3.org/TR/2010/WD-html5-20100304/">http://www.w3.org/TR/2010/WD-html5-20100304/</a></dd>
-    <dd><a href="http://www.w3.org/TR/2009/WD-html5-20090825/">http://www.w3.org/TR/2009/WD-html5-20090825/</a></dd>
-    <dd><a href="http://www.w3.org/TR/2009/WD-html5-20090423/">http://www.w3.org/TR/2009/WD-html5-20090423/</a></dd>
-    <dd><a href="http://www.w3.org/TR/2009/WD-html5-20090212/">http://www.w3.org/TR/2009/WD-html5-20090212/</a></dd>
-    <dd><a href="http://www.w3.org/TR/2008/WD-html5-20080610/">http://www.w3.org/TR/2008/WD-html5-20080610/</a></dd>
-    <dd><a href="http://www.w3.org/TR/2008/WD-html5-20080122/">http://www.w3.org/TR/2008/WD-html5-20080122/</a></dd>
+    <dd><a href="http://www.w3.org/TR/2012/WD-html51-20121217/">http://www.w3.org/TR/2012/WD-html51-20121217/</a></dd>
 <!-- :ZZZ -->
 	<dt id='specification-editors'>Editors:</dt>
 	<dd><a href="http://berjon.com/">Robin Berjon</a>, W3C</dd>
+	<dd><a href="mailto:sfaulkner@paciellogroup.com">Steve Faulkner</a>, The Paciello Group</dd>
 	<dd><a href="mailto:travil@microsoft.com">Travis Leithead</a>, Microsoft</dd>
 	<dd><a href="mailto:Erika.Doyle@microsoft.com">Erika Doyle Navara</a>, Microsoft</dd>
 	<dd><a href="mailto:eoconnor@apple.com">Edward O'Connor</a>, Apple Inc.</dd>
