@@ -40,11 +40,8 @@
 	<dt>Previous Editor:</dt>
     <dd><a href="mailto:ian@hixie.ch">Ian Hickson</a>, Google, Inc.</dd>
    </dl>
-   <p>This specification is available in the following formats: 
-    <a href="single-page.html">single page HTML</a>,
-    <a href="http://www.w3.org/html/wg/drafts/html/master/">multipage HTML</a>,
-<!--PUB-N-->    <a href="author/">web developer edition</a>.
-<!--PUB-Y-->    <a href="http://www.w3.org/TR/<!--INSERT YEAR-->/<!--INSERT URLSTATUS-->-html5-author-<!--INSERT YEAR--><!--INSERT SHORTDAY-->/">web developer edition</a>.
+   <p>
+     This specification is also available as a  <a href="single-page.html">single page HTML</a> document.
    </p> 
   <!--BOILERPLATE middle-w3c-copyright-->
 
