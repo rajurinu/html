@@ -126,7 +126,7 @@
    h4 { position: relative; z-index: 3; }
    h4 + .element, h4 + div + .element { margin-top: -2.5em; padding-top: 2em; }
    .element {
-     background: #EEEEFF;
+     background: #D4D4FF;
      color: black;
      margin: 0 0 1em 0.15em;
      padding: 0 1em 0.25em 0.75em;
@@ -141,7 +141,7 @@
      left: -1.15em;
      height: 2em;
      width: 0.9em;
-     background: #EEEEFF;
+     background: #D4D4FF;
      content: ' ';
      border-style: none none solid solid;
      border-color: #9999FF;
