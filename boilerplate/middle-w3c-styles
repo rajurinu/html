@@ -105,7 +105,7 @@
    .annotation :link, .annotation :visited { color: inherit; }
    .annotation :link:hover, .annotation :visited:hover { background: transparent; }
    .annotation span { border: none ! important; }
-   .note { color: green; background: transparent; font-family: sans-serif; }
+   .note { border-left-style: solid; border-left-width: 0.5em; background: none repeat scroll 0 0 #E9FBE9; border-color: #52E052; }
    .warning { color: red; background: transparent; }
    .note, .warning { font-weight: bolder; font-style: italic; }
    .note em, .warning em, .note i, .warning i { font-style: normal; }
