@@ -105,7 +105,7 @@
    .annotation :link, .annotation :visited { color: inherit; }
    .annotation :link:hover, .annotation :visited:hover { background: transparent; }
    .annotation span { border: none ! important; }
-   .note { border-left-style: solid; border-left-width: 0.5em; background: none repeat scroll 0 0 #E9FBE9; border-color: #52E052; }
+   .note { border-left-style: solid; border-left-width: 0.25em; background: none repeat scroll 0 0 #E9FBE9; border-color: #52E052; }
    .warning { color: red; background: transparent; }
    .warning { font-weight: bolder; font-style: italic; }
    .note em, .warning em, .note i, .warning i { font-style: normal; }
@@ -148,7 +148,7 @@
      border-width: 0.25em;
    }
 
-   .example { display: block; color: #222222; background: #FCFCFC; border-left-style: solid;border-color:#c0c0c0; border-left-width: 0.5em; margin-left: 1em; padding-left: 1em;padding-bottom: 0.5em;}
+   .example { display: block; color: #222222; background: #FCFCFC; border-left-style: solid;border-color:#c0c0c0; border-left-width: 0.25em; margin-left: 1em; padding-left: 1em;padding-bottom: 0.5em;}
    div.example:before { content: 'Code Example: '; font-weight: bolder;}
    td > .example:only-child { margin: 0 0 0 0.1em; }
 
