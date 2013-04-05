@@ -148,7 +148,8 @@
      border-width: 0.25em;
    }
 
-   .example { display: block; color: #222222; background: #FCFCFC; border-left: double; margin-left: 2em; padding-left: 1em; }
+   .example { display: block; color: #222222; background: #FCFCFC; border-left-style: solid;border-color:#c0c0c0; border-left-width: 0.5em; margin-left: 1em; padding-left: 1em; }
+   div.example:before { content: 'Code Example: '; font-weight: bolder;}
    td > .example:only-child { margin: 0 0 0 0.1em; }
 
    ul.domTree, ul.domTree ul { padding: 0 0 0 1em; margin: 0; }
