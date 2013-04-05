@@ -22,7 +22,7 @@
    pre, code { font-size: inherit; font-family: monospace; font-variant: normal; }
    pre strong { color: black; font: inherit; font-weight: bold; background: yellow; }
    pre em { font-weight: bolder; font-style: normal; }
-   @media screen { code { color: orangered; } code :link, code :visited { color: inherit; } }
+   @media screen { code { color: #800000; } code :link, code :visited { color: inherit; } }
    var sub { vertical-align: bottom; font-size: smaller; position: relative; top: 0.1em; }
    table { border-collapse: collapse; border-style: hidden hidden none hidden; }
    table thead, table tbody { border-bottom: solid; }
