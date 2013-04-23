@@ -60,7 +60,6 @@
      <li><code>h5</code></li>
      <li><code>h6</code></li>
      <li><code>header</code></li>
-     <li><code>hgroup</code></li>
      <li><code>hr</code></li>
      <li><code>i</code></li>
      <li><code>iframe</code></li>
@@ -126,7 +125,6 @@
      <li><code>h4</code></li>
      <li><code>h5</code></li>
      <li><code>h6</code></li>
-     <li><code>hgroup</code></li>
     </ul>
    </div>
   </foreignObject>
