@@ -17,6 +17,12 @@
 <html lang="en-US-x-Hixie">
  <head>
   <meta charset='utf-8'>
+<!-- inline bug filer script -->
+<script src="https://dvcs.w3.org/hg/html-api-map/raw-file/tip/js/bug-assist.js"></script>
+<!-- <meta name="bug.blocked" content="14949"> -->
+<meta name="bug.short_desc" content="[HTML]: ">
+<meta name="bug.product" content="HTML WG">
+<meta name="bug.component" content="HTML5 spec">
   <title>HTML 5.1 Nightly</title>
   <script src='link-fixup.js'></script>
   <!--BOILERPLATE middle-override-styles-->
