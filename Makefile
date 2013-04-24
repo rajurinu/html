@@ -11,6 +11,7 @@ output/html/single-page.html: source
 	cp -R images output/html/
 	cp -R fonts output/html/
 	cp 404/* output/html/
+        cp switcher/* output/html/
 
 output/2dcontext/single-page.html: source
 	python scripts/publish.py 2dcontext
