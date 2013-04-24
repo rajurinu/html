@@ -85,7 +85,7 @@ body {
   background-image: url(//www.w3.org/StyleSheets/TR/logo-ED);
 }
 
-.impl {background:red}
+.impl {display:none}
 
 .dev {display:inline !important;
 font-style:italic;}
