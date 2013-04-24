@@ -51,6 +51,9 @@
    <p>
      This specification is also available as a  <a href="single-page.html">single page HTML</a> document.
    </p> 
+<form name="swapCSS" action="">
+ This specification has a <input type="button" value="Default View"> and a <input type="button" value="Developer View">
+</form>
   <!--BOILERPLATE middle-w3c-copyright-->
 
   <h2 class="no-num no-toc">Abstract</h2>
