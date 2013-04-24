@@ -24,8 +24,6 @@
 <meta name="bug.product" content="HTML WG">
 <meta name="bug.component" content="HTML5 spec">
   <title>HTML 5.1 Nightly</title>
-<!--CSS switcher-->
-<script src="cssSwap.js"></script>
   <script src='link-fixup.js'></script>
   <!--BOILERPLATE middle-override-styles-->
   <!--BOILERPLATE middle-author-mode-links-->
