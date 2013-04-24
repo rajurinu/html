@@ -17,6 +17,8 @@
 <html lang="en-US-x-Hixie">
  <head>
   <meta charset='utf-8'>
+<!-- stle switcher script -->
+<script src="switcher/cssSwap.js" type="text/javascript"></script>
 <!-- inline bug filer script -->
 <script src="https://dvcs.w3.org/hg/html-api-map/raw-file/tip/js/bug-assist.js"></script>
 <!-- <meta name="bug.blocked" content="14949"> -->
