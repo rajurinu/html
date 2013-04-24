@@ -49,6 +49,7 @@
 	}
 	
 	function init(){
+	document.getElementById('dev').innerHTML=' - Developer View';	
 		
 		var nSheets = document.styleSheets;
 		for (i=0; i<nSheets.length; i++)
@@ -78,5 +79,7 @@
 				}			
 			}	
 	}
+	
+	
 
 	navigator.appName == "Microsoft Internet Explorer" ? attachEvent('onload', init, false) : addEventListener('load', init, false);	
