@@ -31,7 +31,7 @@
   <!--BOILERPLATE middle-w3c-styles-->
   <!--BOILERPLATE middle-w3c-html-magic-->
    <h1>HTML 5.1 Nightly <!--<span class="dev" id="dev" style="display:none"></span>--></h1>
-   <h2 class="no-num no-toc">A vocabulary and associated APIs for HTML and XHTML</h2>
+   <p class="no-num no-toc subline">A vocabulary and associated APIs for HTML and XHTML</p>
 <!--BOILERPLATE middle-w3c-version-->
 <!-- ZZZ: add the new version after it has shipped -->
     <dt>Previous Versions:</dt>
