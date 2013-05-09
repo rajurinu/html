@@ -66,7 +66,8 @@ var Authors = {
             span.firstChild.nodeValue='Remove ';
             Authors.setCookie('authorstyle', 'yes', 7);
         }
-        else if(span.firstChild.nodeValue==='Remove ' || span.firstChild.nodeValue=='undefined') { 
+        else if(span.firstChild.nodeValue==='Remove ' ||
+                span.firstChild.nodeValue=='undefined') { 
             if(!link.disabled) {Authors.link.disabled=true;}
             span.firstChild.nodeValue='Add ';
             Authors.setCookie('authorstyle', 'no', 7);
