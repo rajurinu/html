@@ -1,10 +1,8 @@
 /* test style sheet, super obvious */
-body {
-	color: #ff948f;
-	background-color: #a0dca2;
+.impl {
+	display:none
 }
-body:before {
-	content: 'ROSIE\2019S DINER!';
-	color: #c00;
-	background-color: #080;
+h1:after {
+	content: '- Developer View';
+	
 }
