@@ -17,6 +17,9 @@
      return null;
    }
   </script>
+<!-- stle switcher script by Stommepoes  -->
+<link title="Author documentation only" media="screen,projection" rel="alternate stylesheet" id="authors" href="switcher/teststylesheet.css">
+<script src="switcher/authorstylesheet.js" type="text/javascript"></script>
  </head>
  <body>
 
