@@ -22,7 +22,7 @@
 <script src="switcher/authorstylesheet.js" type="text/javascript"></script>
  </head>
  <body>
-<span id="styleSwitch"></span>
   <div class="head" id="head">
 <header>
+<span id="styleSwitch"></span>
    <p><a href="http://www.w3.org/"><img height="48" width="72" alt="W3C" src="http://www.w3.org/Icons/w3c_home"></a></p>
