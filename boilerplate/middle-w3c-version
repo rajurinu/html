@@ -1,6 +1,7 @@
 <!--PUB-Y-->   <h2 class="no-num no-toc">W3C <!--INSERT LONGSTATUS--> <!--INSERT LONGDAY--> <!--INSERT YEAR--></h2>
 <!--PUB-N-->   <p class="no-num no-toc subline">Editor's Draft [DATE 1 January 1970]</p>
    </header>
+<span class="multi-break"></span>
 <dl>
 <!--PUB-Y-->    <dt>This Version:</dt>
 <!--PUB-Y-->    <dd><a href="http://www.w3.org/TR/<!--INSERT YEAR-->/<!--INSERT URLSTATUS-->-<!--INSERT TRNAME-->-<!--INSERT YEAR--><!--INSERT SHORTDAY-->/">http://www.w3.org/TR/<!--INSERT YEAR-->/<!--INSERT URLSTATUS-->-<!--INSERT TRNAME-->-<!--INSERT YEAR--><!--INSERT SHORTDAY-->/</a></dd>
