@@ -198,6 +198,8 @@
    header p.subline {color:#005A9C; font: 140% sans-serif;margin: 0.75em 0;}
    #authorButton {overflow: visible; padding: 0.1em 0.3em; position: fixed; right: 2em; top: 6em; width: auto;}
 
+   @media print {#authorButton { display:none;}}
+
 <!--PUB-Y-->   .stability {
 <!--PUB-Y-->     position: fixed;
 <!--PUB-Y-->     bottom: 0;
