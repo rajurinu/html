@@ -15,7 +15,7 @@ var Authors = {
 
         Authors.span=button.appendChild(document.createElement('SPAN'));
         button.appendChild(document.createTextNode('author-only styles')); 
-        document.body.appendChild(button);
+        document.body.getElementById('styleSwitch').appendChild(button);
 
         var cookie=Authors.getCookie('authorstyle'),
             value = cookie ? cookie : 'no';
