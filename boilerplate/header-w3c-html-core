@@ -29,8 +29,8 @@
   <!--BOILERPLATE middle-author-mode-links-->
   <!--BOILERPLATE middle-w3c-styles-->
   <!--BOILERPLATE middle-w3c-html-magic-->
-   <h1>HTML 5.1 Nightly <!--<span class="dev" id="dev" style="display:none"></span>--></h1>
-   <p class="no-num no-toc subline">A vocabulary and associated APIs for HTML and XHTML</p>
+   <h1>HTML 5.1 Nightly</h1>
+   <p class="subline">A vocabulary and associated APIs for HTML and XHTML</p>
 <!--BOILERPLATE middle-w3c-version-->
 <!-- ZZZ: add the new version after it has shipped -->
     <dt>Previous Versions:</dt>
@@ -47,11 +47,11 @@
     <dd><a href="mailto:ian@hixie.ch">Ian Hickson</a>, Google, Inc.</dd>
    </dl>
    <p>
-     This specification is also available as a  <a href="single-page.html">single page HTML</a> document.
-   </p> 
-<!-- <form name="swapCSS" action="">
- This specification has a <input type="button" value="Default View"> and a <input type="button" value="Developer View">
-</form> -->
+     This specification is also available as a  <a href="single-page.html">single page HTML</a> document. 
+   </p>
+<p>An alternative style view is available <span id="styleSwitch"></span> which hides browser 
+implementation related content. If you are an author or developer you may find this view useful.</p>
+
   <!--BOILERPLATE middle-w3c-copyright-->
 
   <h2 class="no-num no-toc">Abstract</h2>
