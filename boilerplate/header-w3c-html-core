@@ -49,8 +49,6 @@
    <p>
      This specification is also available as a  <a href="single-page.html">single page HTML</a> document. 
    </p>
-<p>An alternative style view is available <span id="styleSwitch"></span> which hides browser 
-implementation related content. If you are an author or developer you may find this view useful.</p>
 
   <!--BOILERPLATE middle-w3c-copyright-->
 
