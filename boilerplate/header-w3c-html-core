@@ -16,7 +16,7 @@
     </title>
     <script src='link-fixup.js'></script>
 <!--BOILERPLATE middle-head-->
-    <h1>HTML 5.1
+    <h1 id='big-title'>HTML 5.1
 <!--PUB-N--> Nightly
     </h1>
     <p class="no-num no-toc subline">A vocabulary and associated APIs for HTML and XHTML</p>
