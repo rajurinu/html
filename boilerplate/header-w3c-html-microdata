@@ -4,13 +4,6 @@
      ZZZ: Set YEAR, SHORTDAY, and LONGDAY accordingly. They are used by the INSERT FOO bits below.
      bits marked YYY are for not depending on HTML5 (also see working-copy).
   -->
-<!--SET PUB=1-->
-<!--SET SHORTSTATUS=WD-->
-<!--SET URLSTATUS=WD-->
-<!--SET LONGSTATUS=Working Draft-->
-<!--SET YEAR=2012-->
-<!--SET SHORTDAY=1011-->
-<!--SET LONGDAY=11 October-->
 <!--SET TRNAME=microdata-->
 <!--SET DEVURL=http://dev.w3.org/html5/md/-->
 <!--SET COMPONENT=HTML Microdata (editor: Ian Hickson)-->
