@@ -110,7 +110,7 @@
        h3 { margin: 2.5em 0 1em 0; }
        h4 { margin: 2.5em 0 0.75em 0; }
        h5, h6 { margin: 2.5em 0 1em; }
-       h1 + h2, h1 + h2 + h2 { margin: 0.75em 0 0.75em; }
+       h1 + h2, h1 + h2 + h2, h1 + p, h1 + p + h2 { margin: 0.75em 0 0.75em; }
        h2 + h3, h3 + h4, h4 + h5, h5 + h6 { margin-top: 0.5em; }
        p { margin: 1em 0; }
        hr:not(.top) { display: block; background: none; border: none; padding: 0; margin: 2em 0; height: auto; }
