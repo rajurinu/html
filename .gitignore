@@ -5,3 +5,4 @@ scripts/node_modules
 heartbeat
 heartbeat-2d
 heartbeat-md
+images/*.db

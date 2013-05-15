@@ -1,52 +1,43 @@
 <!DOCTYPE html>
-<!-- when publishing, change bits marked ZZZ
-     ZZZ: Set PUB to 1 for TR/ drafts, 0 for dev drafts; PUB-Y lines are used if it's 1 and PUB-N lines if it's 0.
-     ZZZ: Set YEAR, SHORTDAY (month/day), and LONGDAY accordingly. They are used by the INSERT FOO bits below.
-  -->
-<!--SET PUB=0-->
-<!--SET SHORTSTATUS=WD-->
-<!--SET URLSTATUS=WD-->
-<!--SET LONGSTATUS=Editors' Draft-->
-<!--SET FULLLONGSTATUS=Editors' Draft-->
-<!--SET YEAR=2012-->
-<!--SET SHORTDAY=1011-->
-<!--SET LONGDAY=11 October-->
 <!--SET TRNAME=html51-->
 <!--SET DEVURL=http://www.w3.org/html/wg/drafts/html/master/-->
 <!--SET COMPONENT=HTML5 spec (editor: Ian Hickson)-->
 <html lang="en-US-x-Hixie">
- <head>
-  <meta charset='utf-8'>
-  <title>HTML 5.1 Nightly</title>
-  <script src='link-fixup.js'></script>
-  <!--BOILERPLATE middle-override-styles-->
-  <!--BOILERPLATE middle-author-mode-links-->
-  <!--BOILERPLATE middle-w3c-styles-->
-  <!--BOILERPLATE middle-w3c-html-magic-->
-   <h1>HTML 5.1 Nightly</h1>
-   <h2 class="no-num no-toc">A vocabulary and associated APIs for HTML and XHTML</h2>
+  <head>
+    <meta charset='utf-8'>
+    <!-- inline bug filer script -->
+    <script src="https://dvcs.w3.org/hg/html-api-map/raw-file/tip/js/bug-assist.js"></script>
+    <!-- <meta name="bug.blocked" content="14949"> -->
+    <meta name="bug.short_desc" content="[HTML]: ">
+    <meta name="bug.product" content="HTML WG">
+    <meta name="bug.component" content="HTML5 spec">
+    <title>HTML 5.1
+<!--PUB-N--> Nightly
+    </title>
+    <script src='link-fixup.js'></script>
+<!--BOILERPLATE middle-head-->
+    <h1 id='big-title'>HTML 5.1
+<!--PUB-N--> Nightly
+    </h1>
+    <p class="no-num no-toc subline">A vocabulary and associated APIs for HTML and XHTML</p>
 <!--BOILERPLATE middle-w3c-version-->
-<!-- ZZZ: add the new version after it has shipped -->
-    <dt>Previous Versions:</dt>
-    <dd><a href="http://www.w3.org/TR/2012/WD-html51-20121217/">http://www.w3.org/TR/2012/WD-html51-20121217/</a></dd>
-<!-- :ZZZ -->
-	<dt id='specification-editors'>Editors:</dt>
-	<dd><a href="http://berjon.com/">Robin Berjon</a>, W3C</dd>
-	<dd><a href="mailto:sfaulkner@paciellogroup.com">Steve Faulkner</a>, The Paciello Group</dd>
-	<dd><a href="mailto:travil@microsoft.com">Travis Leithead</a>, Microsoft</dd>
-	<dd><a href="mailto:Erika.Doyle@microsoft.com">Erika Doyle Navara</a>, Microsoft</dd>
-	<dd><a href="mailto:eoconnor@apple.com">Edward O'Connor</a>, Apple Inc.</dd>
-	<dd><a href="mailto:silviapfeiffer1@gmail.com">Silvia Pfeiffer</a></dd>
-	<dt>Previous Editor:</dt>
-    <dd><a href="mailto:ian@hixie.ch">Ian Hickson</a>, Google, Inc.</dd>
+      <dt>Previous Versions:</dt>
+      <dd><a href="http://www.w3.org/TR/2012/WD-html51-20121217/">http://www.w3.org/TR/2012/WD-html51-20121217/</a></dd>
+      <dt id='specification-editors'>W3C Editors:</dt>
+      <dd><a href="http://berjon.com/">Robin Berjon</a>, W3C</dd>
+      <dd><a href="mailto:sfaulkner@paciellogroup.com">Steve Faulkner</a>, The Paciello Group</dd>
+      <dd><a href="mailto:travil@microsoft.com">Travis Leithead</a>, Microsoft</dd>
+      <dd><a href="mailto:Erika.Doyle@microsoft.com">Erika Doyle Navara</a>, Microsoft</dd>
+      <dd><a href="mailto:eoconnor@apple.com">Edward O'Connor</a>, Apple Inc.</dd>
+      <dd><a href="mailto:silviapfeiffer1@gmail.com">Silvia Pfeiffer</a></dd>
+      <dt>WHATWG Editor:</dt>
+      <dd><a href="mailto:ian@hixie.ch">Ian Hickson</a>, Google, Inc.</dd>
    </dl>
-   <p>This specification is available in the following formats: 
-    <a href="single-page.html">single page HTML</a>,
-    <a href="index.html">multipage HTML</a>,
-<!--PUB-N-->    <a href="author/">web developer edition</a>.
-<!--PUB-Y-->    <a href="http://www.w3.org/TR/<!--INSERT YEAR-->/<!--INSERT URLSTATUS-->-html5-author-<!--INSERT YEAR--><!--INSERT SHORTDAY-->/">web developer edition</a>.
-   </p> 
-  <!--BOILERPLATE middle-w3c-copyright-->
+   <p>
+     This specification is also available as a  <a href="single-page.html">single page HTML</a> document. 
+   </p>
+
+<!--BOILERPLATE middle-w3c-copyright-->
 
   <h2 class="no-num no-toc">Abstract</h2>
 
@@ -59,11 +50,9 @@
   effort to improve interoperability.</p>
 
   <h2 class="no-num no-toc">Status of This document</h2>
-  <!--BOILERPLATE middle-w3c-feedback-->
-  <!--BOILERPLATE middle-whatwg-pointer-->
-  <!--BOILERPLATE middle-w3c-feedback-html-->
-  <!--BOILERPLATE middle-w3c-html-pp-->
+<!--BOILERPLATE middle-feedback-->
+<!--BOILERPLATE middle-w3c-html-pp-->
 
   <h2 class="no-num no-toc" id="contents">Table of Contents</h2>
-  <!--toc-->
+<!--toc-->
   <hr>
