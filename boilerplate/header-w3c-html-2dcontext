@@ -18,10 +18,7 @@
  <head>
   <meta charset='utf-8'>
   <title>HTML Canvas 2D Context, Level 2 Nightly</title>
-  <!--BOILERPLATE middle-override-styles-->
-  <!--BOILERPLATE middle-author-mode-links-->
-  <!--BOILERPLATE middle-w3c-styles-->
-  <!--BOILERPLATE middle-w3c-html-magic-->
+  <!--BOILERPLATE middle-head-->
    <h1>HTML Canvas 2D Context, Level 2 Nightly</h1>
    <h2 class="no-num no-toc"></h2>
 <!--BOILERPLATE middle-w3c-version-->
