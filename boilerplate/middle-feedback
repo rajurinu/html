@@ -84,7 +84,7 @@
 
   <!-- UNDER NO CIRCUMSTANCES IS THE FOLLOWING PARAGRAPH TO BE REMOVED OR EDITED WITHOUT TALKING TO IAN FIRST -->  
   <p>The working groups maintains <a
-  href="http://www.w3.org/Bugs/Public/buglist.cgi?query_format=advanced&amp;short_desc_type=allwordssubstr&amp;short_desc=&amp;product=HTML+WG&amp;longdesc_type=allwordssubstr&amp;longdesc=&amp;bug_file_loc_type=allwordssubstr&amp;bug_file_loc=&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=&amp;keywords_type=allwords&amp;keywords=&amp;bug_status=UNCONFIRMED&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;emailtype1=substring&amp;email1=&amp;emailtype2=substring&amp;email2=&amp;bug_id_type=anyexact&amp;bug_id=&amp;votes=&amp;chfieldfrom=&amp;chfieldto=Now&amp;chfieldvalue=&amp;cmdtype=doit&amp;order=Reuse+same+sort+as+last+time&amp;field0-0-0=noop&amp;type0-0-0=noop&amp;value0-0-0=">a
+  href="https://www.w3.org/Bugs/Public/buglist.cgi?list_id=11235&amp;query_format=advanced&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;component=HTML5%20spec&amp;product=HTML%20WG">a
   list of all bug reports that the editors have not yet tried to
   address</a> and <a
   href="http://www.w3.org/html/wg/tracker/products/1">a list of issues
@@ -138,22 +138,11 @@
   This is a draft document and may be updated, replaced or obsoleted by other documents at
   any time. It is inappropriate to cite this document as other than work in progress.</p>
 
-
-  <!-- UNDER NO CIRCUMSTANCES IS THE FOLLOWING PARAGRAPH TO BE REMOVED OR EDITED WITHOUT TALKING TO IAN FIRST -->
   <!-- version history or list of changes (required) -->
   <p>The latest stable version of the editor's draft of this
   specification is always available on <a
-  href="http://dev.w3.org/html5/">the W3C CVS server</a>.
-  There are various ways to follow the change history for this specification:
+  href="https://github.com/w3c/html">the W3C HTML git repository</a>.
   </p>
-  <dl>
-   <dt>Browsable version-control record of all changes:</dt>
-   <dd>Github repository (real-time updates): <a href="https://github.com/w3c/html/commits/master">https://github.com/w3c/html/commits/master</a></dd>
-   <dd>CVSWeb interface (hourly updates): <a href="http://dev.w3.org/cvsweb/html5/spec/">http://dev.w3.org/cvsweb/html5/spec/</a></dd>
-   <dt>E-mail notifications of changes:</dt>
-   <dd>HTML-Commits mailing list (commit notifications for dev.w3.org/html5): <a href="http://lists.w3.org/Archives/Public/public-html-commits/latest">http://lists.w3.org/Archives/Public/public-html-commits/latest</a></dd>
-  </dl>
-  <!-- UNDER NO CIRCUMSTANCES IS THE PRECEDING LIST TO BE REMOVED OR EDITED WITHOUT TALKING TO IAN FIRST -->
 
   <!-- status of document, group responsible (required) -->
   <p>The W3C <a href="http://www.w3.org/html/wg/">HTML Working
@@ -164,8 +153,6 @@
 <!--PUB-N-->  This specification is the [DATE 1 January 1970] Editor's Draft.
   </p>
 
-
-  <!-- UNDER NO CIRCUMSTANCES IS THE PRECEDING PARAGRAPH TO BE REMOVED OR EDITED WITHOUT TALKING TO IAN FIRST -->
   <!-- relationship to other work (required) -->
   <p>Work on this specification is also done at the <a
   href="http://www.whatwg.org/">WHATWG</a>. The W3C HTML working group
@@ -177,4 +164,3 @@
       <li>Annotated summary with unified diffs: <a href="http://html5.org/tools/web-apps-tracker">http://html5.org/tools/web-apps-tracker</a></li>
       <li>Raw Subversion interface: <code>svn checkout http://svn.whatwg.org/webapps/</code></li>
   </ul>
-  <!-- UNDER NO CIRCUMSTANCES IS THE FOLLOWING PARAGRAPH TO BE REMOVED OR EDITED WITHOUT TALKING TO IAN FIRST -->
