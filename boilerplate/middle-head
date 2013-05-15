@@ -104,7 +104,7 @@
      }
 
     </style>
-      <style type="text/css">
+    <style type="text/css">
        pre { margin-left: 2em; white-space: pre-wrap; }
        h2 { margin: 3em 0 1em 0; }
        h3 { margin: 2.5em 0 1em 0; }
