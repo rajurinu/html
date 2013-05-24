@@ -8,7 +8,7 @@ var Authors = {
     //onload
     init: function() {
         //don't bother if there's no author stylesheet
-        if(Authors.link=='undefined'){return;}
+        if(Authors.link===null){return;}
 
         var button=document.createElement('BUTTON');
         button.id='authorButton';
@@ -34,7 +34,8 @@ var Authors = {
     setCookie: function(name, value, expDays) {
         var expDate=new Date();
         expDate.setTime(expDate.getTime()+(expDays*24*60*60*1000));
-        document.cookie=name + '=' + escape(value) + ((expDays==null) ? '' : ';expires=' + expDate.toGMTString()) + '; path=/';
+        document.cookie=name + '=' + escape(value) + ((expDays==null) ?
+                        '' : ';expires=' + expDate.toGMTString()) + '; path=/';
     },
 
     getCookie: function(name) {
