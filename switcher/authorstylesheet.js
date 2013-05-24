@@ -15,7 +15,7 @@ var Authors = {
 
         Authors.span=button.appendChild(document.createElement('SPAN'));
         button.appendChild(document.createTextNode('author-only styles')); 
-        document.body.appendChild(button);
+        document.getElementById('styleSwitch').appendChild(button);
 
         var cookie=Authors.getCookie('authorstyle'),
             value = cookie ? cookie : 'no';
@@ -34,7 +34,8 @@ var Authors = {
     setCookie: function(name, value, expDays) {
         var expDate=new Date();
         expDate.setTime(expDate.getTime()+(expDays*24*60*60*1000));
-        document.cookie=name + '=' + escape(value) + ((expDays==null) ? '' : ';expires=' + expDate.toGMTString()) + '; path=/';
+        document.cookie=name + '=' + escape(value) + ((expDays==null) ?
+                        '' : ';expires=' + expDate.toGMTString()) + '; path=/';
     },
 
     getCookie: function(name) {
