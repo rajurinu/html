@@ -8,7 +8,7 @@ var Authors = {
     //onload
     init: function() {
         //don't bother if there's no author stylesheet
-        if(Authors.link=='undefined'){return;}
+        if(Authors.link===null){return;}
 
         var button=document.createElement('BUTTON');
         button.id='authorButton';
