@@ -3,6 +3,8 @@ html
 
 Deliverables of the HTML Working Group
 
+Commits twitter feed: <a href="https://twitter.com/HTML_Commits/">@HTML_commits</a>
+
 
 Spec Editing Cheatsheet
 ===
