@@ -1,0 +1,557 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:x=
+"urn:schemas-microsoft-com:office:excel" xmlns="http://www.w3.org/1999/xhtml">
+<head>  
+  <style type="text/css">
+
+
+  td {
+        font-size:11.0pt;
+        font-family:Calibri, sans-serif;
+  height:20px;
+        }
+  .Green1
+        {color:#006100;
+        background:#C6EFCE;
+        padding-left:45px;
+        }
+  .Green
+        {color:#006100;
+        background:#C6EFCE;
+        padding-left:90px;
+  }
+
+  .Red
+        {
+        color:#9C0006;
+        background:#FFC7CE;
+  }
+  .Yellow
+        {
+        color:black;
+        background:#FFFFCC;
+  }
+  .Yellow1
+        {color:black;
+        font-size:11.0pt;
+        font-family:Calibri, sans-serif;
+        background:#FFFFCC;
+        padding-left:90px;
+  }
+  .Red1
+        {color:#9C0006;
+        background:#FFC7CE;
+        padding-left:45px;
+  }
+  .Red2
+        {color:#9C0006;
+        background:#FFC7CE;
+        padding-left:90px;
+  }
+  .xl7225352
+        {color:#006100;
+        background:#C6EFCE;
+        padding-left:135px;
+  }
+  .Yellow2
+        {color:black;
+
+        background:#FFFFCC;
+        padding-left:45px;
+
+  .Clean
+        {color:#006100;
+        background:white;
+        padding-left:45px;
+  }
+
+  </style>
+
+  <title></title>
+</head>
+
+<body>
+  <h1>W3Candidate Recommendation 17 December 2012</h1>
+  <div>Status document: June 20, 2013</div>
+  <div ><p>Items have been tagged as having tests are based on tests listed at <a href="http://w3c-test.org/web-platform-tests/master/2dcontext/">http://w3c-test.org/web-platform-tests/master/2dcontext/</a> and 
+    at the test authors site <a href="http://philip.html5.org/tests/canvas/suite/tests/">http://philip.html5.org/tests/canvas/suite/tests/</a>.
+    Items tagged as interoperable are based on observation of features on Chrome, Firefox, Internet Explorer, and Opera websites.     
+    Items that do not have tests or implementations are flagged as "at risk" and unless implemented, will be dropped for the final spec. </p>
+    </div>
+  <div>
+    <table border="0" cellpadding="0" cellspacing="0" width="75%" style=
+    'border-collapse: collapse;table-layout:fixed;width:441pt'>
+      <tr>
+        <td><strong>KEY:</strong><span>&nbsp;</span></td>
+      </tr>
+
+      <tr>
+        <td class="Green">Considered interoperable (tests and implementation)</td>
+      </tr>
+
+      <tr>
+        <td class="Red2">At risk - no implementations or tests</td>
+      </tr>
+
+      <tr>
+        <td class="Yellow1">Has Implementations - needs tests</td>
+      </tr>
+
+      <tr>
+        <td>&nbsp;</td>
+      </tr>
+
+      <tr>
+        <td>&nbsp;</td>
+      </tr>
+
+      <tr>
+        <td class="Clean">Abstract</td>
+      </tr>
+
+      <tr>
+        <td class="Clean">Status of This document (needs edit on title)</td>
+      </tr>
+
+      <tr>
+        <td class="Clean">Table of Contents</td>
+      </tr>
+
+      <tr>
+        <td class="Green1">1. Conformance requirements.</td>
+      </tr>
+
+      <tr>
+        <td class="Green">a. canvas</td>
+      </tr>
+
+      <tr>
+        <td class="Green1">2. State</td>
+      </tr>
+
+      <tr>
+        <td class="Green">a. Save()</td>
+      </tr>
+
+      <tr>
+        <td class="Green">b.&nbsp; Restore()</td>
+      </tr>
+
+      <tr>
+        <td class="Red1">       
+        3. DrawingStyle objects</td>
+      </tr>
+
+      <tr>
+        <td class="Red2">
+         a. DrawingStyle object</td>
+      </tr>
+
+      <tr>
+        <td class="Green1">4. Line styles</td>
+      </tr>
+
+      <tr>
+        <td class="Green">a. lineWidth</td>
+      </tr>
+
+      <tr>
+        <td class="Green">b.&nbsp; lineCap</td>
+      </tr>
+
+      <tr>
+        <td class="Green">c. lineJoin</td>
+      </tr>
+
+      <tr>
+        <td class="Green">d.&nbsp; miterLimit</td>
+      </tr>
+
+      <tr>
+        <td class="Yellow1">e.&nbsp; setLineDash()</td>
+      </tr>
+
+      <tr>
+        <td class="Yellow1">f.&nbsp; getLineDash()</td>
+      </tr>
+
+      <tr>
+        <td class="Yellow1">g. lineDashOffset</td>
+      </tr>
+
+      <tr>
+        <td class="Green1">5. Text styles</td>
+      </tr>
+
+      <tr>
+        <td class="Green">a. font</td>
+      </tr>
+
+      <tr>
+        <td class="Green">b.&nbsp; textAlign</td>
+      </tr>
+
+      <tr>
+        <td class="Green">c. textBaseline</td>
+      </tr>
+
+      <tr>
+        <td class="Green1">6. Building Paths</td>
+      </tr>
+
+      <tr>
+        <td class="Green">a. moveTo()</td>
+      </tr>
+
+      <tr>
+        <td class="Green">b.&nbsp; closePath()</td>
+      </tr>
+
+      <tr>
+        <td class="Green">c. lineTo()</td>
+      </tr>
+
+      <tr>
+        <td class="Green">d.&nbsp; quadraticCurveTo()</td>
+      </tr>
+
+      <tr>
+        <td class="Green">e.&nbsp; bezierCurveTo()</td>
+      </tr>
+
+      <tr>
+        <td class="Green">f.&nbsp; arcTo()</td>
+      </tr>
+
+      <tr>
+        <td class="Green">g. arc()</td>
+      </tr>
+
+      <tr>
+        <td class="Green">h.&nbsp; rect()</td>
+      </tr>
+
+      <tr>
+        <td class="Yellow1">i.&nbsp;&nbsp; ellipse()</td>
+      </tr>
+
+      <tr>
+        <td class="Red1">7. Path Objects<span>&nbsp;</span> (At risk)</td>
+      </tr>
+
+      <tr>
+        <td class="Red2">a. path object</td>
+      </tr>
+
+      <tr>
+        <td class="Red2">b.&nbsp; addPath()</td>
+      </tr>
+
+      <tr>
+        <td class="Red2">c. addPathByStrokingPath()</td>
+      </tr>
+
+      <tr>
+        <td class="Red2">d.&nbsp; addText()<span>&nbsp;&nbsp;</span> - 2 varients</td>
+      </tr>
+
+      <tr>
+        <td class="Red2">e.&nbsp; addPathByStrokingText() -<span>&nbsp;</span> 2
+        varients</td>
+      </tr>
+
+      <tr>
+        <td class="Green1">8. Transformations</td>
+      </tr>
+
+      <tr>
+        <td class="Green">a. scale()</td>
+      </tr>
+
+      <tr>
+        <td class="Green">b.&nbsp; rotate()</td>
+      </tr>
+
+      <tr>
+        <td class="Green">c. translate()</td>
+      </tr>
+
+      <tr>
+        <td class="Green">d.&nbsp; transform()</td>
+      </tr>
+
+      <tr>
+        <td class="Green">e.&nbsp; setTransform()</td>
+      </tr>
+
+      <tr>
+        <td class="Green1">9. Fill and stroke styles</td>
+      </tr>
+
+      <tr>
+        <td class="Green">a. fillStyle</td>
+      </tr>
+
+      <tr>
+        <td class="Green">b.&nbsp; strokeStyle</td>
+      </tr>
+
+      <tr>
+        <td class="Green">c. addColorStop()</td>
+      </tr>
+
+      <tr>
+        <td class="Green">d.&nbsp; createLinearGradient()</td>
+      </tr>
+
+      <tr>
+        <td class="Green">e.&nbsp; createRadialGradient()</td>
+      </tr>
+
+      <tr>
+        <td class="Green">f.&nbsp; createPattern()</td>
+      </tr>
+
+      <tr>
+        <td class="Green1">10.&nbsp;&nbsp; Drawing rectangles to the canvas</td>
+      </tr>
+
+      <tr>
+        <td class="Green">a. clearRect()</td>
+      </tr>
+
+      <tr>
+        <td class="Green">b.&nbsp; fillRect()</td>
+      </tr>
+
+      <tr>
+        <td class="Green">c. strokeRect()</td>
+      </tr>
+
+      <tr>
+        <td class="Green1">11.&nbsp;&nbsp; Drawing text to the canvas</td>
+      </tr>
+
+      <tr>
+        <td class="Green">a. fillText()</td>
+      </tr>
+
+      <tr>
+        <td class="Green">b.&nbsp; strokeText()</td>
+      </tr>
+
+      <tr>
+        <td class="Green">c. measureText()</td>
+      </tr>
+
+      <tr>
+        <td class="xl7225352">&nbsp;i.&nbsp; width</td>
+      </tr>
+
+      <tr>
+        <td class="xl7225352">&nbsp;&nbsp;&nbsp;ii.&nbsp; actualBoundingBoxLeft</td>
+      </tr>
+
+      <tr>
+        <td class="xl7225352">&nbsp;&nbsp;iii.&nbsp; actualBoundingBoxRight</td>
+      </tr>
+
+      <tr>
+        <td class="xl7225352">&nbsp;iv.&nbsp; fontBoundingBoxAscent</td>
+      </tr>
+
+      <tr>
+        <td class="xl7225352">&nbsp;&nbsp;&nbsp;v.&nbsp; fontBoundingBoxDecent</td>
+      </tr>
+
+      <tr>
+        <td class="xl7225352">&nbsp;vi.&nbsp; emHeightAscent</td>
+      </tr>
+
+      <tr>
+        <td class="xl7225352">vii.&nbsp; hangingBaseline</td>
+      </tr>
+
+      <tr>
+        <td class="xl7225352"><span>&nbsp;</span>viii.&nbsp; alphabetBaseline</td>
+      </tr>
+
+      <tr>
+        <td class="xl7225352">&nbsp;ix.&nbsp; ideographicBaseline</td>
+      </tr>
+
+      <tr>
+        <td class="Green1">12.&nbsp;&nbsp; Drawing paths to the canvas</td>
+      </tr>
+
+      <tr>
+        <td class="Green">a. beginPath()</td>
+      </tr>
+
+      <tr>
+        <td class="Green">b.&nbsp; fill()</td>
+      </tr>
+
+      <tr>
+        <td class="Green">c. stroke()</td>
+      </tr>
+
+      <tr>
+        <td class="Yellow1">d.&nbsp; drawSystemFocusRing()</td>
+      </tr>
+
+      <tr>
+        <td class="Yellow1">e.&nbsp;drawCustomFocusRing()</td>
+      </tr>
+
+      <tr>
+        <td class="Yellow1">
+
+        f.&nbsp; scrollPathIntoView()</td>
+      </tr>
+
+      <tr>
+        <td class="Green">g. clip()</td>
+      </tr>
+
+      <tr>
+        <td class="Green">h.&nbsp; isPointInPath()</td>
+      </tr>
+
+      <tr>
+        <td class="Green1">13.&nbsp;&nbsp; Drawing images to the canvas</td>
+      </tr>
+
+      <tr>
+        <td class="Green">a. drawImage()</td>
+      </tr>
+
+      <tr>
+        <td class="Red1">14.&nbsp;&nbsp; Hit regions &ndash; (At Risk)</td>
+      </tr>
+
+      <tr>
+        <td class="Red2">a. addHitRegion()</td>
+      </tr>
+
+      <tr>
+        <td class="Red2">b.&nbsp; path()</td>
+      </tr>
+
+      <tr>
+        <td class="Red2">c. id()</td>
+      </tr>
+
+      <tr>
+        <td class="Red2">d.&nbsp; parentID()</td>
+      </tr>
+
+      <tr>
+        <td class="Red2">e.&nbsp; cursor()</td>
+      </tr>
+
+      <tr>
+        <td class="Red2">f.&nbsp; control()</td>
+      </tr>
+
+      <tr>
+        <td class="Red2">g. label()</td>
+      </tr>
+
+      <tr>
+        <td class="Red2">h.&nbsp; roll()</td>
+      </tr>
+
+      <tr>
+        <td class="Red2">i.&nbsp;&nbsp; removeHitRegion()</td>
+      </tr>
+
+      <tr>
+        <td class="Red2">j.&nbsp; region</td>
+      </tr>
+
+      <tr>
+        <td class="Green1">15.&nbsp;&nbsp; Pixel manipulation</td>
+      </tr>
+
+      <tr>
+        <td class="Green">a. ImageData object</td>
+      </tr>
+
+      <tr>
+        <td class="Green">b.&nbsp; createImageData()</td>
+      </tr>
+
+      <tr>
+        <td class="Green">c. getImageData()</td>
+      </tr>
+
+      <tr>
+        <td class="Green">d.&nbsp; width</td>
+      </tr>
+
+      <tr>
+        <td class="Green">e.&nbsp; height</td>
+      </tr>
+
+      <tr>
+        <td class="Green">f.&nbsp; data</td>
+      </tr>
+
+      <tr>
+        <td class="Green">g. putImageData()</td>
+      </tr>
+
+      <tr>
+        <td class="Green1">16.&nbsp;&nbsp; Compositing</td>
+      </tr>
+
+      <tr>
+        <td class="Green">a. globalAlpha</td>
+      </tr>
+
+      <tr>
+        <td class="Green">b.&nbsp; globalCompositeOperation</td>
+      </tr>
+
+      <tr>
+        <td class="Green1">17.&nbsp;&nbsp; Shadows</td>
+      </tr>
+
+      <tr>
+        <td class="Green">a. shadowColor</td>
+      </tr>
+
+      <tr>
+        <td class="Green">b.&nbsp; shadowOffsetX</td>
+      </tr>
+
+      <tr>
+        <td class="Green">c. shadowOffsetY</td>
+      </tr>
+
+      <tr>
+        <td class="Green">d.&nbsp; shadowBlur</td>
+      </tr>
+
+      <tr>
+        <td class="Yellow2">18.&nbsp;&nbsp; Drawing model</td>
+      </tr>
+
+      <tr>
+        <td class="Clean">19.&nbsp;&nbsp; Best practices</td>
+      </tr>
+
+      <tr>
+        <td class="Clean">20.&nbsp;&nbsp; Examples</td>
+      </tr>
+
+      <tr>
+        <td class="Clean">References</td>
+      </tr>
+    </table>
+  </div>
+</body>
+</html>
