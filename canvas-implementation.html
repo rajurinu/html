@@ -8,10 +8,23 @@
   <style type="text/css">
 
 
-  td {
+     .hidden {
+         border: 0;
+         clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+         clip: rect(1px, 1px, 1px, 1px);
+         height: 1px;
+         width: 1px;
+         margin: -1px;
+         padding: 0;
+         overflow: hidden;
+         position: absolute;
+         
+     }
+
+    td {
         font-size:11.0pt;
         font-family:Calibri, sans-serif;
-  height:20px;
+        height:20px;
         }
   .Green1
         {color:#006100;
@@ -90,15 +103,15 @@
       </tr>
 
       <tr>
-        <td class="Green">Considered interoperable (tests and implementation)</td>
+        <td class="Green">Considered interoperable (tests and implementation)<span class="hidden">  interoperable</span></td>
       </tr>
 
       <tr>
-        <td class="Red2">At risk - no implementations or tests</td>
+        <td class="Red2">At risk - no implementations or tests<span class="hidden">  At risk - no implementation</span></td>
       </tr>
 
       <tr>
-        <td class="Yellow1">Has Implementations - needs tests</td>
+        <td class="Yellow1">Has Implementations - needs tests<span class="hidden">    Has Implementations - needs tests</span></td>
       </tr>
 
       <tr>
@@ -122,117 +135,117 @@
       </tr>
 
       <tr>
-        <td class="Green1">1. Conformance requirements.</td>
+        <td class="Green1">1. Conformance requirements.<span class="hidden">    interoperable</span></td>
       </tr>
 
       <tr>
-        <td class="Green">a. canvas</td>
+        <td class="Green">a. canvas<span class="hidden">  interoperable</span></td>
       </tr>
 
       <tr>
-        <td class="Green1">2. State</td>
+        <td class="Green1">2. State<span class="hidden">  interoperable</span></td>
       </tr>
 
       <tr>
-        <td class="Green">a. Save()</td>
+        <td class="Green">a. Save()<span class="hidden">  interoperable</span></td>
       </tr>
 
       <tr>
-        <td class="Green">b.&nbsp; Restore()</td>
+        <td class="Green">b.&nbsp; Restore()<span class="hidden">  interoperable</span></td>
       </tr>
 
       <tr>
         <td class="Green1">       
-        3. DrawingStyle objects</td>
+        3. DrawingStyle objects<span class="hidden">  interoperable</span></td>
       </tr>
 
       <tr>
         <td class="Green">
-         a. DrawingStyle object</td>
+         a. DrawingStyle object<span class="hidden">  interoperable</span></td>
       </tr>
 
       <tr>
-        <td class="Green1">4. Line styles</td>
+        <td class="Green1">4. Line styles<span class="hidden">  interoperable</span></td>
       </tr>
 
       <tr>
-        <td class="Green">a. lineWidth</td>
+        <td class="Green">a. lineWidth<span class="hidden">  interoperable</span></td>
       </tr>
 
       <tr>
-        <td class="Green">b.&nbsp; lineCap</td>
+        <td class="Green">b.&nbsp; lineCap<span class="hidden">  interoperable</span></td>
       </tr>
 
       <tr>
-        <td class="Green">c. lineJoin</td>
+        <td class="Green">c. lineJoin<span class="hidden">  interoperable</span></td>
       </tr>
 
       <tr>
-        <td class="Green">d.&nbsp; miterLimit</td>
+        <td class="Green">d.&nbsp; miterLimit<span class="hidden">  interoperable</span></td>
       </tr>
 
       <tr>
-        <td class="Yellow1">e.&nbsp; setLineDash()</td>
+        <td class="Yellow1">e.&nbsp; setLineDash()<span class="hidden">  Has Implementations - needs tests</span></td>
       </tr>
 
       <tr>
-        <td class="Yellow1">f.&nbsp; getLineDash()</td>
+        <td class="Yellow1">f.&nbsp; getLineDash()<span class="hidden">  Has Implementations - needs tests</span></td>
       </tr>
 
       <tr>
-        <td class="Yellow1">g. lineDashOffset</td>
+        <td class="Yellow1">g. lineDashOffset<span class="hidden">  Has Implementations - needs tests</span></td>
       </tr>
 
       <tr>
-        <td class="Green1">5. Text styles</td>
+        <td class="Green1">5. Text styles<span class="hidden">  interoperable</span></td>
       </tr>
 
       <tr>
-        <td class="Green">a. font</td>
+        <td class="Green">a. font<span class="hidden">  interoperable</span></td>
       </tr>
 
       <tr>
-        <td class="Green">b.&nbsp; textAlign</td>
+        <td class="Green">b.&nbsp; textAlign<span class="hidden">  interoperable</span></td>
       </tr>
 
       <tr>
-        <td class="Green">c. textBaseline</td>
+        <td class="Green">c. textBaseline<span class="hidden">  interoperable</span></td>
       </tr>
 
       <tr>
-        <td class="Green1">6. Building Paths</td>
+        <td class="Green1">6. Building Paths<span class="hidden">  interoperable</span></td>
       </tr>
 
       <tr>
-        <td class="Green">a. moveTo()</td>
+        <td class="Green">a. moveTo()<span class="hidden">  interoperable</span></td>
       </tr>
 
       <tr>
-        <td class="Green">b.&nbsp; closePath()</td>
+        <td class="Green">b.&nbsp; closePath()<span class="hidden">  interoperable</span></td>
       </tr>
 
       <tr>
-        <td class="Green">c. lineTo()</td>
+        <td class="Green">c. lineTo()<span class="hidden">  interoperable</span></td>
       </tr>
 
       <tr>
-        <td class="Green">d.&nbsp; quadraticCurveTo()</td>
+        <td class="Green">d.&nbsp; quadraticCurveTo()<span class="hidden">  interoperable</span></td>
       </tr>
 
       <tr>
-        <td class="Green">e.&nbsp; bezierCurveTo()</td>
+        <td class="Green">e.&nbsp; bezierCurveTo()<span class="hidden">  interoperable</span></td>
       </tr>
 
       <tr>
-        <td class="Green">f.&nbsp; arcTo()</td>
+        <td class="Green">f.&nbsp; arcTo()<span class="hidden">  interoperable</span></td>
       </tr>
 
       <tr>
-        <td class="Green">g. arc()</td>
+        <td class="Green">g. arc()<span class="hidden">  interoperable</span></td>
       </tr>
 
       <tr>
-        <td class="Green">h.&nbsp; rect()</td>
+        <td class="Green">h.&nbsp; rect()<span class="hidden">  interoperable</span></td>
       </tr>
 
       <tr>
@@ -240,318 +253,316 @@
       </tr>
 
       <tr>
-        <td class="Red1">7. Path Objects<span>&nbsp;</span> (At risk)</td>
+        <td class="Red1">7. Path Objects<span>&nbsp;</span><span class="hidden">  At risk - no implementation</span></td>
       </tr>
 
       <tr>
-        <td class="Red2">a. path object</td>
+        <td class="Red2">a. path object<span class="hidden">  At risk - no implementation</span></td>
       </tr>
 
       <tr>
-        <td class="Red2">b.&nbsp; addPath()</td>
+        <td class="Red2">b.&nbsp; addPath()<span class="hidden">  At risk - no implementation</span></td>
       </tr>
 
       <tr>
-        <td class="Red2">c. addPathByStrokingPath()</td>
+        <td class="Red2">c. addPathByStrokingPath()<span class="hidden">  At risk - no implementation</span></td>
       </tr>
 
       <tr>
-        <td class="Red2">d.&nbsp; addText()<span>&nbsp;&nbsp;</span> - 2 varients</td>
+        <td class="Red2">d.&nbsp; addText()<span>&nbsp;&nbsp;</span> - 2 varients<span class="hidden">  At risk - no implementation</span></td>
       </tr>
 
       <tr>
         <td class="Red2">e.&nbsp; addPathByStrokingText() -<span>&nbsp;</span> 2
-        varients</td>
+        varients<span class="hidden">  At risk - no implementation</span></td>
       </tr>
 
       <tr>
-        <td class="Green1">8. Transformations</td>
+        <td class="Green1">8. Transformations<span class="hidden">  interoperable</span></td>
       </tr>
 
       <tr>
-        <td class="Green">a. scale()</td>
+        <td class="Green">a. scale()<span class="hidden">  interoperable</span></td>
       </tr>
 
       <tr>
-        <td class="Green">b.&nbsp; rotate()</td>
+        <td class="Green">b.&nbsp; rotate()<span class="hidden">  interoperable</span></td>
       </tr>
 
       <tr>
-        <td class="Green">c. translate()</td>
+        <td class="Green">c. translate()<span class="hidden">  interoperable</span></td>
       </tr>
 
       <tr>
-        <td class="Green">d.&nbsp; transform()</td>
+        <td class="Green">d.&nbsp; transform()<span class="hidden">  interoperable</span></td>
       </tr>
 
       <tr>
-        <td class="Green">e.&nbsp; setTransform()</td>
+        <td class="Green">e.&nbsp; setTransform()<span class="hidden">  interoperable</span></td>
       </tr>
 
       <tr>
-        <td class="Green1">9. Fill and stroke styles</td>
+        <td class="Green1">9. Fill and stroke styles<span class="hidden">  interoperable</span></td>
       </tr>
 
       <tr>
-        <td class="Green">a. fillStyle</td>
+        <td class="Green">a. fillStyle<span class="hidden">  interoperable</span></td>
       </tr>
 
       <tr>
-        <td class="Green">b.&nbsp; strokeStyle</td>
+        <td class="Green">b.&nbsp; strokeStyle<span class="hidden">  interoperable</span></td>
       </tr>
 
       <tr>
-        <td class="Green">c. addColorStop()</td>
+        <td class="Green">c. addColorStop()<span class="hidden">  interoperable</span></td>
       </tr>
 
       <tr>
-        <td class="Green">d.&nbsp; createLinearGradient()</td>
+        <td class="Green">d.&nbsp; createLinearGradient()<span class="hidden">  interoperable</span></td>
       </tr>
 
       <tr>
-        <td class="Green">e.&nbsp; createRadialGradient()</td>
+        <td class="Green">e.&nbsp; createRadialGradient()<span class="hidden">  interoperable</span></td>
       </tr>
 
       <tr>
-        <td class="Green">f.&nbsp; createPattern()</td>
+        <td class="Green">f.&nbsp; createPattern()<span class="hidden">  interoperable</span></td>
       </tr>
 
       <tr>
-        <td class="Green1">10.&nbsp;&nbsp; Drawing rectangles to the canvas</td>
+        <td class="Green1">10.&nbsp;&nbsp; Drawing rectangles to the canvas<span class="hidden">  interoperable</span></td>
       </tr>
 
       <tr>
-        <td class="Green">a. clearRect()</td>
+        <td class="Green">a. clearRect()<span class="hidden">  interoperable</span></td>
       </tr>
 
       <tr>
-        <td class="Green">b.&nbsp; fillRect()</td>
+        <td class="Green">b.&nbsp; fillRect()<span class="hidden">  interoperable</span></td>
       </tr>
 
       <tr>
-        <td class="Green">c. strokeRect()</td>
+        <td class="Green">c. strokeRect()<span class="hidden">  interoperable</span></td>
       </tr>
 
       <tr>
-        <td class="Green1">11.&nbsp;&nbsp; Drawing text to the canvas</td>
+        <td class="Green1">11.&nbsp;&nbsp; Drawing text to the canvas<span class="hidden">  interoperable</span></td>
       </tr>
 
       <tr>
-        <td class="Green">a. fillText()</td>
+        <td class="Green">a. fillText()<span class="hidden">  interoperable</span></td>
       </tr>
 
       <tr>
-        <td class="Green">b.&nbsp; strokeText()</td>
+        <td class="Green">b.&nbsp; strokeText()<span class="hidden">  interoperable</span></td>
       </tr>
 
       <tr>
-        <td class="Green">c. measureText()</td>
+        <td class="Green">c. measureText()<span class="hidden">  interoperable</span></td>
       </tr>
 
       <tr>
-        <td class="xl7225352">&nbsp;i.&nbsp; width</td>
+        <td class="xl7225352">&nbsp;i.&nbsp; width<span class="hidden">  interoperable</span></td>
       </tr>
 
       <tr>
-        <td class="xl7225352">&nbsp;&nbsp;&nbsp;ii.&nbsp; actualBoundingBoxLeft</td>
+        <td class="xl7225352">&nbsp;&nbsp;&nbsp;ii.&nbsp; actualBoundingBoxLeft<span class="hidden">  interoperable</span></td>
       </tr>
 
       <tr>
-        <td class="xl7225352">&nbsp;&nbsp;iii.&nbsp; actualBoundingBoxRight</td>
+        <td class="xl7225352">&nbsp;&nbsp;iii.&nbsp; actualBoundingBoxRight<span class="hidden">  interoperable</span></td>
       </tr>
 
       <tr>
-        <td class="xl7225352">&nbsp;iv.&nbsp; fontBoundingBoxAscent</td>
+        <td class="xl7225352">&nbsp;iv.&nbsp; fontBoundingBoxAscent<span class="hidden">  interoperable</span></td>
       </tr>
 
       <tr>
-        <td class="xl7225352">&nbsp;&nbsp;&nbsp;v.&nbsp; fontBoundingBoxDecent</td>
+        <td class="xl7225352">&nbsp;&nbsp;&nbsp;v.&nbsp; fontBoundingBoxDecent<span class="hidden">  interoperable</span></td>
       </tr>
 
       <tr>
-        <td class="xl7225352">&nbsp;vi.&nbsp; emHeightAscent</td>
+        <td class="xl7225352">&nbsp;vi.&nbsp; emHeightAscent<span class="hidden">  interoperable</span></td>
       </tr>
 
       <tr>
-        <td class="xl7225352">vii.&nbsp; hangingBaseline</td>
+        <td class="xl7225352">vii.&nbsp; hangingBaseline<span class="hidden">  interoperable</span></td>
       </tr>
 
       <tr>
-        <td class="xl7225352"><span>&nbsp;</span>viii.&nbsp; alphabetBaseline</td>
+        <td class="xl7225352"><span>&nbsp;</span>viii.&nbsp; alphabetBaseline<span class="hidden">  interoperable</span></td>
       </tr>
 
       <tr>
-        <td class="xl7225352">&nbsp;ix.&nbsp; ideographicBaseline</td>
+        <td class="xl7225352">&nbsp;ix.&nbsp; ideographicBaseline<span class="hidden">  interoperable</span></td>
       </tr>
 
       <tr>
-        <td class="Green1">12.&nbsp;&nbsp; Drawing paths to the canvas</td>
+        <td class="Green1">12.&nbsp;&nbsp; Drawing paths to the canvas<span class="hidden">  interoperable</span></td>
       </tr>
 
       <tr>
-        <td class="Green">a. beginPath()</td>
+        <td class="Green">a. beginPath()<span class="hidden">  interoperable</span></td>
       </tr>
 
       <tr>
-        <td class="Green">b.&nbsp; fill()</td>
+        <td class="Green">b.&nbsp; fill()<span class="hidden">  interoperable</span></td>
       </tr>
 
       <tr>
-        <td class="Green">c. stroke()</td>
+        <td class="Green">c. stroke()<span class="hidden">  interoperable</span></td>
       </tr>
 
       <tr>
-        <td class="Red2">d.&nbsp; drawSystemFocusRing()</td>
+        <td class="Red2">d.&nbsp; drawSystemFocusRing()<span class="hidden">  At risk - no implementation</span></td>
       </tr>
 
       <tr>
-        <td class="Red2">e.&nbsp;drawCustomFocusRing()</td>
+        <td class="Red2">e.&nbsp;drawCustomFocusRing()<span class="hidden">  At risk - no implementation</span></td>
       </tr>
 
       <tr>
-        <td class="Red2">
-
-        f.&nbsp; scrollPathIntoView()</td>
+        <td class="Red2">f.&nbsp; scrollPathIntoView()<span class="hidden">  At risk - no implementation</span></td>
       </tr>
 
       <tr>
-        <td class="Green">g. clip()</td>
+        <td class="Green">g. clip()<span class="hidden">  interoperable</span></td>
       </tr>
 
       <tr>
-        <td class="Green">h.&nbsp; isPointInPath()</td>
+        <td class="Green">h.&nbsp; isPointInPath()<span class="hidden">  interoperable</span></td>
       </tr>
 
       <tr>
-        <td class="Green1">13.&nbsp;&nbsp; Drawing images to the canvas</td>
+        <td class="Green1">13.&nbsp;&nbsp; Drawing images to the canvas<span class="hidden">  interoperable</span></td>
       </tr>
 
       <tr>
-        <td class="Green">a. drawImage()</td>
+        <td class="Green">a. drawImage()<span class="hidden">  interoperable</span></td>
       </tr>
 
       <tr>
-        <td class="Red1">14.&nbsp;&nbsp; Hit regions &ndash; (At Risk)</td>
+        <td class="Red1">14.&nbsp;&nbsp; Hit regions<span class="hidden">  At risk - no implementation</span></td>
       </tr>
 
       <tr>
-        <td class="Red2">a. addHitRegion()</td>
+        <td class="Red2">a. addHitRegion()<span class="hidden">  At risk - no implementation</span></td>
       </tr>
 
       <tr>
-        <td class="Red2">b.&nbsp; path()</td>
+        <td class="Red2">b.&nbsp; path()<span class="hidden">  At risk - no implementation</span></td>
       </tr>
 
       <tr>
-        <td class="Red2">c. id()</td>
+        <td class="Red2">c. id()<span class="hidden">  At risk - no implementation</span></td>
       </tr>
 
       <tr>
-        <td class="Red2">d.&nbsp; parentID()</td>
+        <td class="Red2">d.&nbsp; parentID()<span class="hidden">  At risk - no implementation</span></td>
       </tr>
 
       <tr>
-        <td class="Red2">e.&nbsp; cursor()</td>
+        <td class="Red2">e.&nbsp; cursor()<span class="hidden">  At risk - no implementation</span></td>
       </tr>
 
       <tr>
-        <td class="Red2">f.&nbsp; control()</td>
+        <td class="Red2">f.&nbsp; control()<span class="hidden">  At risk - no implementation</span></td>
       </tr>
 
       <tr>
-        <td class="Red2">g. label()</td>
+        <td class="Red2">g. label()<span class="hidden">  At risk - no implementation</span></td>
       </tr>
 
       <tr>
-        <td class="Red2">h.&nbsp; roll()</td>
+        <td class="Red2">h.&nbsp; roll()<span class="hidden">  At risk - no implementation</span></td>
       </tr>
 
       <tr>
-        <td class="Red2">i.&nbsp;&nbsp; removeHitRegion()</td>
+        <td class="Red2">i.&nbsp;&nbsp; removeHitRegion()<span class="hidden">  At risk - no implementation</span></td>
       </tr>
 
       <tr>
-        <td class="Red2">j.&nbsp; region</td>
+        <td class="Red2">j.&nbsp; region<span class="hidden">  At risk - no implementation</span></td>
       </tr>
 
       <tr>
-        <td class="Green1">15.&nbsp;&nbsp; Pixel manipulation</td>
+        <td class="Green1">15.&nbsp;&nbsp; Pixel manipulation<span class="hidden">  interoperable</span></td>
       </tr>
 
       <tr>
-        <td class="Green">a. ImageData object</td>
+        <td class="Green">a. ImageData object<span class="hidden">  interoperable</span></td>
       </tr>
 
       <tr>
-        <td class="Green">b.&nbsp; createImageData()</td>
+        <td class="Green">b.&nbsp; createImageData()<span class="hidden">  interoperable</span></td>
       </tr>
 
       <tr>
-        <td class="Green">c. getImageData()</td>
+        <td class="Green">c. getImageData()<span class="hidden">  interoperable</span></td>
       </tr>
 
       <tr>
-        <td class="Green">d.&nbsp; width</td>
+        <td class="Green">d.&nbsp; width<span class="hidden">  interoperable</span></td>
       </tr>
 
       <tr>
-        <td class="Green">e.&nbsp; height</td>
+        <td class="Green">e.&nbsp; height<span class="hidden">  interoperable</span></td>
       </tr>
 
       <tr>
-        <td class="Green">f.&nbsp; data</td>
+        <td class="Green">f.&nbsp; data<span class="hidden">  interoperable</span></td>
       </tr>
 
       <tr>
-        <td class="Green">g. putImageData()</td>
+        <td class="Green">g. putImageData()<span class="hidden">  interoperable</span></td>
       </tr>
 
       <tr>
-        <td class="Green1">16.&nbsp;&nbsp; Compositing</td>
+        <td class="Green1">16.&nbsp;&nbsp; Compositing<span class="hidden">  interoperable</span></td>
       </tr>
 
       <tr>
-        <td class="Green">a. globalAlpha</td>
+        <td class="Green">a. globalAlpha<span class="hidden">  interoperable</span></td>
       </tr>
 
       <tr>
-        <td class="Green">b.&nbsp; globalCompositeOperation</td>
+        <td class="Green">b.&nbsp; globalCompositeOperation<span class="hidden">  interoperable</span></td>
       </tr>
 
       <tr>
-        <td class="Green1">17.&nbsp;&nbsp; Shadows</td>
+        <td class="Green1">17.&nbsp;&nbsp; Shadows<span class="hidden">  interoperable</span></td>
       </tr>
 
       <tr>
-        <td class="Green">a. shadowColor</td>
+        <td class="Green">a. shadowColor<span class="hidden">  interoperable</span></td>
       </tr>
 
       <tr>
-        <td class="Green">b.&nbsp; shadowOffsetX</td>
+        <td class="Green">b.&nbsp; shadowOffsetX<span class="hidden">  interoperable</span></td>
       </tr>
 
       <tr>
-        <td class="Green">c. shadowOffsetY</td>
+        <td class="Green">c. shadowOffsetY<span class="hidden">  interoperable</span></td>
       </tr>
 
       <tr>
-        <td class="Green">d.&nbsp; shadowBlur</td>
+        <td class="Green">d.&nbsp; shadowBlur<span class="hidden">  interoperable</span></td>
       </tr>
 
       <tr>
-        <td class="Yellow2">18.&nbsp;&nbsp; Drawing model</td>
+        <td class="Yellow2">18.&nbsp;&nbsp; Drawing model<span class="hidden">  Has Implementations - needs tests</span></td>
       </tr>
 
       <tr>
-        <td class="Clean">19.&nbsp;&nbsp; Best practices</td>
+        <td class="Clean">19.&nbsp;&nbsp; Best practices<span class="hidden">  interoperable</span></td>
       </tr>
 
       <tr>
-        <td class="Clean">20.&nbsp;&nbsp; Examples</td>
+        <td class="Clean">20.&nbsp;&nbsp; Examples<span class="hidden">  interoperable</span></td>
       </tr>
 
       <tr>
-        <td class="Clean">References</td>
+        <td class="Clean">References<span class="hidden">  interoperable</span></td>
       </tr>
     </table>
   </div>
