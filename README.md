@@ -3,6 +3,8 @@ html
 
 Deliverables of the HTML Working Group
 
+Commits twitter feed: <a href="https://twitter.com/HTML_Commits/">@HTML_commits</a>
+
 
 Spec Editing Cheatsheet
 ===
@@ -67,7 +69,7 @@ Installing the necessary software
 
   2. Install [Anolis](http://anolis.gsnedders.com/):
 
-        $ hg clone ssh://hg@bitbucket.org/ms2ger/anolis
+        $ hg clone https://bitbucket.org/ms2ger/anolis
         $ cd anolis; sudo python setup.py install
 
      Periodically, make sure your Anolis is up to date:

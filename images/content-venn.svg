@@ -37,7 +37,6 @@
      <li><code>canvas</code></li>
      <li><code>cite</code></li>
      <li><code>code</code></li>
-     <li><code>command</code></li>
      <li><code>data</code></li>
      <li><code>date</code></li>
      <li><code>datalist</code></li>
@@ -70,6 +69,7 @@
      <li><code>keygen</code></li>
      <li><code>label</code></li>
      <li><code>link</code>*</li>
+     <li><code>main</code></li>
      <li><code>map</code></li>
      <li><code>mark</code></li>
      <li><code>math</code></li>
@@ -99,6 +99,7 @@
      <li><code>sup</code></li>
      <li><code>svg</code></li>
      <li><code>table</code></li>
+     <li><code>template</code></li>
      <li><code>textarea</code></li>
      <li><code>time</code></li>
      <li><code>u</code></li>
@@ -152,12 +153,12 @@
     <h1>Metadata content</h1>
     <ul>
      <li><code>base</code></li>
-     <li><code>command</code></li>
      <li><code>link</code></li>
      <li><code>meta</code></li>
      <li><code>noscript</code></li>
      <li><code>script</code></li>
      <li><code>style</code></li>
+     <li><code>template</code></li>
      <li><code>title</code></li>
     </ul>
    </div>
@@ -180,7 +181,6 @@
      <li><code>input</code>*</li>
      <li><code>keygen</code></li>
      <li><code>label</code></li>
-     <li><code>menu</code>*</li>
      <li><code>object</code>*</li>
      <li><code>select</code></li>
      <li><code>textarea</code></li>
@@ -209,7 +209,6 @@
      <li><code>canvas</code></li>
      <li><code>cite</code></li>
      <li><code>code</code></li>
-     <li><code>command</code></li>
      <li><code>data</code></li>
      <li><code>date</code></li>
      <li><code>datalist</code></li>
@@ -247,6 +246,7 @@
      <li><code>sub</code></li>
      <li><code>sup</code></li>
      <li><code>svg</code></li>
+     <li><code>template</code></li>
      <li><code>textarea</code></li>
      <li><code>time</code></li>
      <li><code>u</code></li>
