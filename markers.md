@@ -37,8 +37,11 @@ The source file has a number of markers that are used to split it into the diffe
 
 * FIXUP : adjust the heading levels of &lt;h1>-&lt;h6> elements
 * BOILERPLATE : add specific boilerplate for spec creation
-* TOPIC:XXX : start new topic (ADD-TOPIC:xxx , REMOVE-TOPIC:xxx)
 * PUB-N / PUB-Y : Content to include or exclude from TR space
+
+### Changes between topics markers email particular people automatically (@WHATWG)
+
+* TOPIC:XXX : start new topic (ADD-TOPIC:xxx , REMOVE-TOPIC:xxx)
 
 ### Notes about W3C / WHATWG differences
 
