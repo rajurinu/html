@@ -207,4 +207,3 @@ If you want to delete the branch, too, remove it both on local and GitHub (the i
 
     $ git branch -d feature/blah
     $ git push origin :feature/blah
-
