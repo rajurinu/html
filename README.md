@@ -101,11 +101,19 @@ Installing the necessary software
 
         $ sudo easy_install lxml
 
+  5. Ensure you have a clone of the [html-tools](https://github.com/w3c/html-tools/) downloaded.
+
+
 Build the spec
 ---
 
     $ cd html
     $ make html    # or 'make 2dcontext' for the Canvas spec, or 'make all' for both
+
+By default, it looks for the html-tools directory in `../tools`. If they are located somewhere else
+on your system, you can specify the path with the `HTML_TOOLS_DIR` environment variable:
+
+    $ HTML_TOOLS_DIR=~/Projects/html-tools make html
 
 If successful, the single page version of the spec can be found at
 `output/html/single-page.html`, and the multipage version at
