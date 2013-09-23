@@ -107,17 +107,8 @@ Installing the necessary software
 Build the spec
 ---
 
-    $ cd html
-    $ make html    # or 'make 2dcontext' for the Canvas spec, or 'make all' for both
+Please check out and follow the repository at https://github.com/w3c/html-tools .
 
-By default, it looks for the html-tools directory in `../tools`. If they are located somewhere else
-on your system, you can specify the path with the `HTML_TOOLS_DIR` environment variable:
-
-    $ HTML_TOOLS_DIR=~/Projects/html-tools make html
-
-If successful, the single page version of the spec can be found at
-`output/html/single-page.html`, and the multipage version at
-`output/html/spec.html`.
 
 Cherry pick commits from the WHATWG spec
 ---
