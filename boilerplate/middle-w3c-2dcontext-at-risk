@@ -13,10 +13,10 @@
       <a href="#hit-regions">Hit regions</a>
     </li>
     <li>
-      <a href="#textmetrics">Text metrics</a>
+      All attributes of the <a href="#textmetrics">Text metrics</a> object except <a href="#dom-textmetrics-width">'width'</a>
     </li>
     <li>
-      <a href="#dom-context-2d-ellipse">Ellips</a>
+      <a href="#dom-context-2d-ellipse">Ellipse</a>
     </li>
     <li>
       Focus rings: <a href="#dom-context-2d-drawsystemfocusring">drawSystemFocusRing(element)</a> and <a href="#dom-context-2d-drawcustomfocusring">drawCustomFocusRing(element)</a>
