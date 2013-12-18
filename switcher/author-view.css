@@ -1,10 +1,13 @@
-/* test style sheet, super obvious */
+/* Author view style sheet */
 .impl {
-	display:none
+    display:    none;
 }
-h1:after {
-	content: '- Developer View';
-	font-style: italic;
-	
+
+h1::after {
+    content: '- Developer View';
+    font-style: italic;
 }
- body {width:50em;}
+
+body {
+    max-width:  50em;
+}
