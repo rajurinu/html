@@ -3,7 +3,7 @@ WARNING: Not Crockford-friendly. */
 
 var Authors = {
     span: null,
-    link: document.getElementById('authors'), 
+    link: document.getElementById('author-view'), 
 
     //onload
     init: function() {
