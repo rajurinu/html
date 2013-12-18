@@ -64,11 +64,15 @@
         var hash = document.location.hash.replace(/^#/, "");
         if (!hash) return;
         var target = document.getElementById(hash);
-        if (!target) return;
-        var hidden = window.getComputedStyle(target).getPropertyValue("display") === "none";
-        if (!hidden) return;
-        toggle();
-        target.scrollIntoView(true);
+        var node = target;
+        while (node) {
+            if (window.getComputedStyle(node).getPropertyValue("display") === "none") {
+                toggle();
+                target.scrollIntoView(true);
+                return;
+            }
+            node = node.parentNode;
+        }
     }
     
     window.addEventListener ?
