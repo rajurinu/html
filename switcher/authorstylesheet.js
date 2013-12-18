@@ -1,3 +1,4 @@
+/*global escape, unescape*/
 /*
     Author view
     Creates button, sets cookie, toggles authors-only stylesheet.
@@ -55,9 +56,24 @@
         setState();
         button.onclick = toggle;
         document.getElementById("styleSwitch").appendChild(button);
+        checkHash();
+    }
+    
+    function checkHash () {
+        if (!authorView) return;
+        var hash = document.location.hash.replace(/^#/, "");
+        if (!hash) return;
+        var target = document.getElementById(hash);
+        if (!target) return;
+        var hidden = window.getComputedStyle(target).getPropertyValue("display") === "none";
+        if (!hidden) return;
+        toggle();
+        target.scrollIntoView(true);
     }
     
     window.addEventListener ?
         window.addEventListener("load", init, false) :
         window.attachEvent("onload", init);
+    
+    window.onhashchange = checkHash;
 }());
