@@ -32,12 +32,12 @@
 
     function setState () {
         if (authorView) {
-            button.textContent = "Remove author-only styles";
+            button.textContent = "Remove developer-view styles";
             link.disabled = false;
             setCookie("authorstyle", "yes");
         }
         else {
-            button.textContent = "Add author-only styles";
+            button.textContent = "Add developer-view styles";
             link.disabled = true;
             setCookie("authorstyle", "no");
         }
