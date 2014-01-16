@@ -1,84 +1,83 @@
-/* creates button, sets cookie, for calling authors-only stylesheet. 
-WARNING: Not Crockford-friendly. */
+/*global escape, unescape*/
+/*
+    Author view
+    Creates button, sets cookie, toggles authors-only stylesheet.
+*/
 
-var Authors = {
-    span: null,
-    link: document.getElementById('authors'), 
-
-    //onload
-    init: function() {
-        //don't bother if there's no author stylesheet
-        if(Authors.link===null){return;}
-
-        var button=document.createElement('BUTTON');
-        button.id='authorButton';
-
-        Authors.span=button.appendChild(document.createElement('SPAN'));
-        button.appendChild(document.createTextNode('author-only styles')); 
-        document.getElementById('styleSwitch').appendChild(button);
-
-        var cookie=Authors.getCookie('authorstyle'),
-            value = cookie ? cookie : 'no';
-        Authors.span.appendChild(document.createTextNode((value==='no') ? 'Add ' : 'Remove '));
-        Authors.link.disabled=true;
-        Authors.link.disabled = (value==='no') ? true : false; 
-         
-        if(document.addEventListener) {
-            button.addEventListener('click', Authors.toggle, false);
-        }
-        else {
-            button.attachEvent('onclick', Authors.toggle);
-        }
-    },
-
-    setCookie: function(name, value, expDays) {
-        var expDate=new Date();
-        expDate.setTime(expDate.getTime()+(expDays*24*60*60*1000));
-        document.cookie=name + '=' + escape(value) + ((expDays==null) ?
-                        '' : ';expires=' + expDate.toGMTString()) + '; path=/';
-    },
-
-    getCookie: function(name) {
-        var cookiename=name + '=',
-            cookieArray=document.cookie.split(';');
-        for(var i=0;i<cookieArray.length;i++) {
-            var c=cookieArray[i];
-            while(c.charAt(0)===' ') { 
-                c=c.substring(1,c.length);
-            }
-            if(c.indexOf(cookiename)===0) {
-                return unescape(c.substring(cookiename.length,c.length));
-            }
+(function () {
+    var link = document.getElementById("author-view")
+    ,   authorView = false
+    ,   button
+    ;
+    if (!link) return;
+    
+    function getCookie (name) {
+        var cookieName = name + '='
+        ,   cookieArray = document.cookie.split(';')
+        ;
+        for (var i = 0, n = cookieArray.length; i < n; i++) {
+            var c = cookieArray[i].replace(/^\s+/, "");
+            if (c.indexOf(cookieName) === 0)
+                return unescape(c.substring(cookieName.length, c.length));
         }
         return null;
-    },
+    }
 
-    //in case someone wants
-    deleteCookie: function(name) {
-        Authors.setCookie(name, '', -1);
-    },
+    function setCookie (name, value) {
+        var expDate = new Date(Date.now() + 365 * 24 * 60 * 60 * 1000);
+        document.cookie = name + "=" + escape(value) +
+                          ";expires=" + expDate.toGMTString() +
+                          "; path=/";
+    }
 
-    toggle: function(event) {
-        var link=Authors.link,
-            span=Authors.span;
-
-        if(span.firstChild.nodeValue==='Add ') {
-            if(link.disabled) {Authors.link.disabled=false;}
-            span.firstChild.nodeValue='Remove ';
-            Authors.setCookie('authorstyle', 'yes', 7);
+    function setState () {
+        if (authorView) {
+            button.textContent = "Remove developer-view styles";
+            link.disabled = false;
+            setCookie("authorstyle", "yes");
         }
-        else if(span.firstChild.nodeValue==='Remove ' ||
-                span.firstChild.nodeValue=='undefined') { 
-            if(!link.disabled) {Authors.link.disabled=true;}
-            span.firstChild.nodeValue='Add ';
-            Authors.setCookie('authorstyle', 'no', 7);
+        else {
+            button.textContent = "Add developer-view styles";
+            link.disabled = true;
+            setCookie("authorstyle", "no");
         }
     }
-};
 
-if(document.addEventListener) {
-    window.addEventListener('load', Authors.init, false);
-}
-else if(window.attachEvent) {
-    window.attachEvent('onload', Authors.init);
-}
+    function toggle () {
+        authorView = !authorView;
+        setState();
+    }
+    
+    function init () {
+        var cookie = getCookie("authorstyle");
+        button = document.createElement("button");
+        button.id = "authorButton";
+        if (cookie === "yes") authorView = true;
+        setState();
+        button.onclick = toggle;
+        document.getElementById("styleSwitch").appendChild(button);
+        checkHash();
+    }
+    
+    function checkHash () {
+        if (!authorView) return;
+        var hash = document.location.hash.replace(/^#/, "");
+        if (!hash) return;
+        var target = document.getElementById(hash);
+        var node = target;
+        while (node) {
+            if (window.getComputedStyle(node).getPropertyValue("display") === "none") {
+                toggle();
+                target.scrollIntoView(true);
+                return;
+            }
+            node = node.parentNode;
+        }
+    }
+    
+    window.addEventListener ?
+        window.addEventListener("load", init, false) :
+        window.attachEvent("onload", init);
+    
+    window.onhashchange = checkHash;
+}());

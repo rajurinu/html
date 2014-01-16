@@ -38,7 +38,6 @@
      <li><code>cite</code></li>
      <li><code>code</code></li>
      <li><code>data</code></li>
-     <li><code>date</code></li>
      <li><code>datalist</code></li>
      <li><code>del</code></li>
      <li><code>details</code></li>
@@ -68,12 +67,10 @@
      <li><code>kbd</code></li>
      <li><code>keygen</code></li>
      <li><code>label</code></li>
-     <li><code>link</code>*</li>
      <li><code>main</code></li>
      <li><code>map</code></li>
      <li><code>mark</code></li>
      <li><code>math</code></li>
-     <li><code>meta</code>*</li>
      <li><code>meter</code></li>
      <li><code>nav</code></li>
      <li><code>noscript</code></li>
@@ -221,11 +218,9 @@
      <li><code>kbd</code></li>
      <li><code>keygen</code></li>
      <li><code>label</code></li>
-     <li><code>link</code>*</li>
      <li><code>map</code>*</li>
      <li><code>mark</code></li>
      <li><code>math</code></li>
-     <li><code>meta</code>*</li>
      <li><code>meter</code></li>
      <li><code>noscript</code></li>
      <li><code>object</code></li>
