@@ -26,5 +26,5 @@ output/microdata/single-page.html:
 	cp -R fonts output/microdata/
 
 output/srcset/single-page.html: source ../tools/*.py
-	python ../tools/publish.py srcset
+	python ../tools/publish.py srcset output/srcset w3c-srcset
 	cp -R fonts output/srcset/
