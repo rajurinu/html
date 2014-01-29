@@ -3,6 +3,9 @@ html
 
 Deliverables of the HTML Working Group
 
+Commits twitter feed: <a href="https://twitter.com/HTML_Commits/">@HTML_commits</a>
+
+
 Spec Editing Cheatsheet
 ===
 
@@ -98,15 +101,14 @@ Installing the necessary software
 
         $ sudo easy_install lxml
 
+  5. Ensure you have a clone of the [html-tools](https://github.com/w3c/html-tools/) downloaded.
+
+
 Build the spec
 ---
 
-    $ cd html
-    $ make html    # or 'make 2dcontext' for the Canvas spec, 'make srcset for the srcset spec, or 'make all' for all
+Please check out and follow the repository at https://github.com/w3c/html-tools .
 
-If successful, the single page version of the spec can be found at
-`output/html/single-page.html`, and the multipage version at
-`output/html/spec.html`.
 
 Cherry pick commits from the WHATWG spec
 ---
@@ -204,3 +206,4 @@ If you want to delete the branch, too, remove it both on local and GitHub (the i
 
     $ git branch -d feature/blah
     $ git push origin :feature/blah
+

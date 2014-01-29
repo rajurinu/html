@@ -69,6 +69,7 @@
      <li><code>keygen</code></li>
      <li><code>label</code></li>
      <li><code>link</code>*</li>
+     <li><code>main</code></li>
      <li><code>map</code></li>
      <li><code>mark</code></li>
      <li><code>math</code></li>
@@ -98,6 +99,7 @@
      <li><code>sup</code></li>
      <li><code>svg</code></li>
      <li><code>table</code></li>
+     <li><code>template</code></li>
      <li><code>textarea</code></li>
      <li><code>time</code></li>
      <li><code>u</code></li>
@@ -156,6 +158,7 @@
      <li><code>noscript</code></li>
      <li><code>script</code></li>
      <li><code>style</code></li>
+     <li><code>template</code></li>
      <li><code>title</code></li>
     </ul>
    </div>
@@ -243,6 +246,7 @@
      <li><code>sub</code></li>
      <li><code>sup</code></li>
      <li><code>svg</code></li>
+     <li><code>template</code></li>
      <li><code>textarea</code></li>
      <li><code>time</code></li>
      <li><code>u</code></li>
