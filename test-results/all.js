@@ -56,7 +56,7 @@ var table = "<thead><tr class='persist-header'><th>Test</th><th>" + ua.join("</t
 for (var i = 0, n = out.length; i < n; i++) {
     var test = out[i];
     table += "<tr class='test' id='test-file-" + i + "'><td><a href='http://www.w3c-test.org" + esc(test.name) + "' target='_blank'>" +
-             test.name + "</a></td>" + cells(test.status) + "</tr>\n";
+             esc(test.name) + "</a></td>" + cells(test.status) + "</tr>\n";
     toc += "<li><a href='#test-file-" + i + "'>" + esc(test.name) + "</a></li>";
     for (var j = 0, m = test.subtests.length; j < m; j++) {
         var st = test.subtests[j];
@@ -66,8 +66,6 @@ for (var i = 0, n = out.length; i < n; i++) {
 }
 table += "</table>";
 toc += "</ol>";
-
-// XXX we need better stats
 
 var meta = "<p><strong>Test files</strong>: " + out.length + 
            "; <strong>Total subtests</strong>: " + subtests + "</p>" +

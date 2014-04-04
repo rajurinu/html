@@ -53,7 +53,7 @@ for (var i = 0, n = out.length; i < n; i++) {
                  (100*test.fails.length/totalSubtests).toFixed(2) + "% of total)</small>"
     ;
     table += "<tr class='test' id='test-file-" + i + "'><td><a href='http://www.w3c-test.org" + test.name + "' target='_blank'>" +
-             test.name + "</a> " + details + "</td>" + cells(test.status) + "</tr>\n";
+             esc(test.name) + "</a> " + details + "</td>" + cells(test.status) + "</tr>\n";
     toc += "<li><a href='#test-file-" + i + "'>" + esc(test.name) + "</a> " + details + "</li>\n";
     for (var j = 0, m = test.fails.length; j < m; j++) {
         var st = test.fails[j];
