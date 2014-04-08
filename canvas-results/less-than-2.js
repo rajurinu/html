@@ -4,7 +4,7 @@ var fs = require("fs")
 ,   data = require("./consolidated.json")
 ,   out = []
 ,   ua = data.ua
-,   title = "Features with fewer than 2 passes in HTML"
+,   title = "Features with fewer than 2 passes in Canvas 2DContext"
 ,   tmpl = fs.readFileSync(pth.join(__dirname, "template.html"), "utf8")
 ,   totalSubtests = 0
 ;
