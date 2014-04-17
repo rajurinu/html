@@ -40,9 +40,7 @@
      <li><code>data</code></li>
      <li><code>datalist</code></li>
      <li><code>del</code></li>
-     <li><code>details</code></li>
      <li><code>dfn</code></li>
-     <li><code>dialog</code></li>
      <li><code>div</code></li>
      <li><code>dl</code></li>
      <li><code>em</code></li>
@@ -168,7 +166,6 @@
      <li><code>a</code></li>
      <li><code>audio</code>*</li>
      <li><code>button</code></li>
-     <li><code>details</code></li>
      <li><code>embed</code></li>
      <li><code>iframe</code></li>
      <li><code>img</code>*</li>
