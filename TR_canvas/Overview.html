@@ -474,13 +474,6 @@
 
 
     <!-- stability (required) -->
-  <p>Implementors should be aware that this specification is not
-  stable. <strong>Implementors who are not taking part in the
-  discussions are likely to find the specification changing out from
-  under them in incompatible ways.</strong> Vendors interested in
-  implementing this specification before it eventually reaches the
-  Candidate Recommendation stage should join the aforementioned
-  mailing lists and take part in the discussions.</p>
 
 
   <div id="multipage-common">
@@ -558,6 +551,13 @@
   6 of the W3C Patent Policy</a>.</p>
 
 <div>
+  <p>Implementors should be aware that this specification is not
+  stable. <strong>Implementors who are not taking part in the
+  discussions are likely to find the specification changing out from
+  under them in incompatible ways.</strong> Vendors interested in
+  implementing this specification before it eventually reaches the
+  Candidate Recommendation stage should join the aforementioned
+  mailing lists and take part in the discussions.</p>
   <p>
     The following features are <strong>experimental</strong> and have not been discussed by the working group or implemented.
   </p>
@@ -762,7 +762,8 @@ interface <dfn id="canvasrenderingcontext2d">CanvasRenderingContext2D</dfn> {
   // hit regions
   void <a data-anolis-xref="dom-context-2d-addHitRegion" href="#dom-context-2d-addhitregion">addHitRegion</a>(optional <a href="#hitregionoptions">HitRegionOptions</a> options);
   void <a data-anolis-xref="dom-context-2d-removeHitRegion" href="#dom-context-2d-removehitregion">removeHitRegion</a>(DOMString id);
-
+  void <a href="#dom-context-2d-clearhitregions" title="dom-context-2d-clearHitRegions">clearHitRegions</a>();
+  
   // pixel manipulation
   <a href="#imagedata">ImageData</a> <a data-anolis-xref="dom-context-2d-createImageData" href="#dom-context-2d-createimagedata">createImageData</a>(double sw, double sh);
   <a href="#imagedata">ImageData</a> <a data-anolis-xref="dom-context-2d-createImageData" href="#dom-context-2d-createimagedata">createImageData</a>(<a href="#imagedata">ImageData</a> imagedata);
@@ -5109,7 +5110,21 @@ v6DVT (also check for '- -' bits in the part above) -->
     previous role.</p>
 
    </dd>
+   
+   <dt><var title="">context</var> . <code title="dom-context-2d-clearHitRegions"><a href="#dom-context-2d-clearhitregions">
+	clearHitRegions</a></code>()</dt>
 
+   <dd>
+
+   <p>Removes all hit regions from the canvas
+   bitmap. </p>
+   
+   <p>The paths that were covered by these regions are effectively 
+   cleared by this operation, leaving all regions
+   non-interactive. </p>
+
+   </dd>
+   
   </dl>
 
   <div class="impl">
@@ -5356,7 +5371,7 @@ v6DVT (also check for '- -' bits in the part above) -->
      <code data-anolis-xref="dom-HitRegionOptions-label"><a href="#dom-hitregionoptions-label">label</a></code> member's value is either null or the
      empty string.</p></li>
 
-     <li><p>The <var data-anolis-xref="">specified pixels</var> has no pixels.</p></li>
+     <li><p>The <var data-anolis-xref="">specified hit region</var> has no pixels.</p></li>
 
      <li><p>The <var data-anolis-xref="">arguments</var> object's <code data-anolis-xref="dom-HitRegionOptions-control"><a href="#dom-hitregionoptions-control">control</a></code> member is neither null nor a
      <a href="#supported-interactive-canvas-fallback-element">supported interactive canvas fallback element</a>.</p></li>
@@ -5514,6 +5529,23 @@ v6DVT (also check for '- -' bits in the part above) -->
 
   </ol>
 
+   <p>When the <dfn id="dom-context-2d-clearhitregions" title="dom-context-2d-clearHitRegions"><code>clearHitRegions()</code></dfn>
+  method is invoked, the user agent must run the following steps:</p>
+
+  <ol>
+
+   <li><p>Remove all <var title="">hit regions</var>
+   from the <code>canvas</code> element and clear the element's <a href="#hit-region-list">hit region list</a>. If no regions currently
+   exist, abort these steps.</p></li>
+
+  </ol>
+
+  <p class="note">Calling <code title="dom-context-2d-clearRect"><a href="#dom-context-2d-clearrect">clearRect()</a></code> is a way
+  to clear all or some hit regions. Calling clearHitRegions()  
+  removes all hit regions and clears the hit region list. The <a href="#hit-region-list">hit region
+  list</a> itself is also reset when the rendering context is reset. 
+  For example, when a <code><a href="#canvasrenderingcontext2d">CanvasRenderingContext2D</a></code> object is 
+  bound to or unbound from a <code>canvas</code>, or the dimensions of the bitmap are changed.</p>
   </div>
 
   <hr>
