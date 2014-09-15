@@ -6,3 +6,8 @@ heartbeat
 heartbeat-2d
 heartbeat-md
 images/*.db
+autocherry.js
+cherries.txt
+node_modules
+package.json
+picture-element
